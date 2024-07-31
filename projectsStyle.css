@@ -46,18 +46,18 @@ h2 {
   max-width: 34.15rem;
 }
 
-.checkpoint h3 {
-  position: absolute;
-  text-align: center;
-  transform: translate(-3.5em);
-  font-size: 2em;
-}
-
 .checkpoint h2 {
   position: relative;
   text-align: center;
   top: 0%;
   left: 0%;
+  font-size: 2em;
+}
+
+.checkpoint h3 {
+  position: absolute;
+  text-align: center;
+  transform: translate(-3.5em);
   font-size: 2em;
 }
 
@@ -136,4 +136,14 @@ h2 {
 
 .checkpoint:nth-child(even) div::before {
   right: -.5em;
+}
+
+.checkpoint:nth-child(odd) h3 {
+  left: -3em;
+  top: 40%;
+}
+
+.checkpoint:nth-child(even) h3 {
+  right: -10em;
+  top: 40%;
 }
