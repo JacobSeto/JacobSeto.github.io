@@ -5,6 +5,7 @@ body {
   padding: 2em;
 }
 
+
 body::before {
   content: "";
   position: fixed;
@@ -78,6 +79,18 @@ h2 {
   border: 2px solid #fff;
   border-radius: 1em;
   padding: 1.5em;
+}
+
+.checkpoint div onmouseenter {
+  background-color: white;
+}
+
+.checkpoint div onmouseout {
+  background: none;
+}
+
+.checkpoint div :hover {
+  cursor: pointer;
 }
 
 .checkpoint p {

@@ -1,53 +1,30 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>contact form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contact-form.css">
 </head>
 
 <body>
-
-  <link href="contact-form.css" rel="stylesheet">
-
-  <div class="fcf-body">
-
-    <div id="fcf-form">
-      <h3 class="fcf-h3">Contact us</h3>
-
-      <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-
-        <div class="fcf-form-group">
-          <label for="Name" class="fcf-label">Your name</label>
-          <div class="fcf-input-group">
-            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-          </div>
-        </div>
-
-        <div class="fcf-form-group">
-          <label for="Email" class="fcf-label">Your email address</label>
-          <div class="fcf-input-group">
-            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-          </div>
-        </div>
-
-        <div class="fcf-form-group">
-          <label for="Message" class="fcf-label">Your message</label>
-          <div class="fcf-input-group">
-            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
-              required></textarea>
-          </div>
-        </div>
-
-        <div class="fcf-form-group">
-          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send
-            Message</button>
-        </div>
-      </form>
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-left-title">
+        <h2>Get in touch</h2>
+        <hr>
+      </div>
+      <input type="hidden" name="access_key" value="41a36971-7dd7-4d39-9c74-51e7f9c8d64e">
+      <input type="text" name="name" id="name" placeholder="Name" class="contact-inputs" required>
+      <input type="email" name="email" id="name" placeholder="Email" class="contact-inputs" required>
+      <textarea name="message" placeholder="Message..." class="contact-inputs" required></textarea>
+      <button type="Submit">Submit <img src="/images/Sus Cube.png" alt=""></button>
+    </form>
+    <div clas="contact-right">
+      <img src="/images/right_img.png" alt="">
     </div>
-
   </div>
-
 </body>
 
 </html>
