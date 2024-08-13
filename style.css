@@ -1,12 +1,28 @@
+/* Index Default */
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
-  background-color: rgb(40, 50, 81);
+  background: linear-gradient(rgb(48, 48, 166), rgb(55, 71, 119));
+  font-family: 'Outfit';
   padding: 2em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
   color: white;
   margin-left: 32px;
+}
+
+h2 {
+  color: white;
+  font-size: xx-large;
+  text-align: left;
+  padding-top: 25px;
 }
 
 p {
@@ -67,4 +83,130 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Contact*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 25%;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: lightcyan;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: lightcyan;
+  border: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: black;
+  border-radius: 50px;
+
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 3px solid rgb(186, 186, 186);
+}
+
+.contact-inputs::placeholder {
+  color: lightgrey;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  gap: 10px;
+  border: 3px solid transparent;
+  border-radius: 50px;
+  background: navy;
+  cursor: pointer;
+}
+
+.contact-left button:hover {
+  border: 3px solid lightgrey;
+}
+
+.contact-left button img {
+  height: 15px;
+}
+
+.contact-right img {
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+
+  .contact-inputs {
+    width: 80vw;
+  }
+
+  .contact-right {
+    display: none;
+  }
+}
+
+/* Style the socialmedia div */
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  /* Ensure it spans the entire width */
+  position: absolute;
+  bottom: 20px;
+  /* 20 pixels above the bottom */
+  left: 0;
+}
+
+.socialmedia a {
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 32px;
+  /* Adjust size as needed */
+  height: 32px;
+  /* Adjust size as needed */
 }

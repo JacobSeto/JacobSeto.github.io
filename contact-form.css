@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Outfit';
-  background: linear-gradient(navy, rgb(40, 50, 81));
+  background: linear-gradient(rgb(48, 48, 166), rgb(55, 71, 119));
 }
 
 .contact-container {
@@ -46,7 +46,7 @@ body {
   outline: none;
   padding-left: 25px;
   font-weight: 500;
-  color: grey;
+  color: black;
   border-radius: 50px;
 
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .contact-inputs:focus {
-  border: 2px solid lightgrey;
+  border: 3px solid rgb(186, 186, 186);
 }
 
 .contact-inputs::placeholder {
@@ -74,8 +74,12 @@ body {
   gap: 10px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(270deg, navy, lightblue);
   cursor: pointer;
+}
+
+.contact-left button:hover {
+  border: 10px solid #0000ff;
+  border-radius: 20px;
 }
 
 .contact-left button img {
