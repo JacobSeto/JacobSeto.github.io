@@ -42,12 +42,13 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #38444d;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 li {
   float: left;
-  position: sticky;
 }
 
 li a,
@@ -70,7 +71,7 @@ li.dropdown {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -163,13 +164,13 @@ li.dropdown {
 .checkpoint:nth-child(odd) {
   border-left: 3px solid #888;
   padding-left: 3em;
-  transform: translateX(50%);
+  transform: translateX(49.75%);
 }
 
 .checkpoint:nth-child(even) {
   border-right: 3px solid #888;
   padding-right: 3em;
-  transform: translateX(-50%);
+  transform: translateX(-49.75%);
 }
 
 .checkpoint:nth-child(odd)::before,
@@ -237,11 +238,7 @@ li.dropdown {
   align-items: center;
   padding: 10px;
   width: 100%;
-  /* Ensure it spans the entire width */
-  position: absolute;
-  bottom: 20px;
-  /* 20 pixels above the bottom */
-  left: 0;
+  bottom: 0;
 }
 
 .socialmedia a {
