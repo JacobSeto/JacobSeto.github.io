@@ -9,34 +9,182 @@
 </head>
 
 <body>
+  <!--Navigation Bar-->
   <ul>
     <li><a href="index.html">Home</a></li>
     <li class="dropdown">
       <a href="projects.html" class="dropbtn">Projects</a>
       <div class="dropdown-content">
-        <a href="projects.html#serve">SERVE</a>
-        <a href="projects.html#rabbeat">RabBeat</a>
-        <a href="projects.html#tilly">Tilly's Critter Command</a>
-        <a href="projects.html#polylect">Polylect</a>
-        <a href="projects.html#light">Light Up The Stage</a>
-        <a href="projects.html#rainbow">Rainbow Card Rumble</a>
-        <a href="projects.html#fury">Fury of The Lost Knight</a>
-        <a href="projects.html#flock-arena">Flock Arena</a>
-        <a href="projects.html#carbon">Carbon Footprint Calc</a>
-        <a href="projects.html#planetoids">Planetoids</a>
-        <a href="projects.html#castaways">Castaway</a>
+        <a href="#serve">SERVE</a>
+        <a href="#rabbeat">RabBeat</a>
+        <a href="#tilly">Tilly's Critter Command</a>
+        <a href="#polylect">Polylect</a>
+        <a href="#light">Light Up The Stage</a>
+        <a href="#rainbow">Rainbow Card Rumble</a>
+        <a href="#fury">Fury of The Lost Knight</a>
+        <a href="#flock-arena">Flock Arena</a>
+        <a href="#carbon">Carbon Footprint Calc</a>
+        <a href="#planetoids">Planetoids</a>
+        <a href="#castaways">Castaway</a>
       </div>
     </li>
     <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html">Contact</a></li>
   </ul>
 
+  <!--About me-->
   <h2>Jacob Seto</h2>
   <p>Current undergraduate student at Cornell University. Interested in game design and project management. I'm
     passionate when it comes to leading teams and organizing workflow. However, I equally enjoy being a team player to
     achieve the vision of each my projects. Follow my journey and send me a message, always happy to meet new people!
   </p>
 
+
+  <!--Projects-->
+  <section>
+    <div class="title">
+      <h1>Game Project Experience</h1>
+      <p>Follow my game dev journey!</p>
+    </div>
+
+    <div class="timeline">
+      <div class="checkpoint">
+        <a id="serve">
+          <div>
+            <label>March, 2020</label>
+            <h2>SERVE</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="checkpoint">
+        <a id="rabbeat">
+          <div onclick="window.open('https://we8-studios.itch.io/rabbeat/')">
+            <label>March, 2020</label>
+            <h2>RabBeat</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+        </a>
+      </div>
+
+
+      <div class="checkpoint">
+        <a id="tilly">
+          <div>
+            <label>March, 2020</label>
+            <h2>Tilly's Critter Command</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="polylect">
+          <div>
+            <label>March, 2020</label>
+            <h2>Polylect</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="light">
+          <div>
+            <label>March, 2020</label>
+            <h2>Light Up The Stage</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="rainbow">
+          <div>
+            <label>March, 2020</label>
+            <h2>Rainbow Card Rumble</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="fury">
+          <div>
+            <label>March, 2020</label>
+            <h2>Fury of The Lost Night</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="flock-arena">
+          <div>
+            <label>March, 2020</label>
+            <h2>Flock Arena</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="carbon">
+          <div>
+            <label>March, 2020</label>
+            <h2>Carbon Footprint Calculator</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="planetoids">
+          <div>
+            <label>March, 2020</label>
+            <h2>Planetoids</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="checkpoint">
+        <a id="castaways">
+          <div>
+            <label>March, 2020</label>
+            <h2>Castaway</h2>
+            <p>Started learning Unity and C#</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr>
+        </div>
+        <input type="hidden" name="access_key" value="41a36971-7dd7-4d39-9c74-51e7f9c8d64e">
+        <input type="text" name="name" id="name" placeholder="Name" class="contact-inputs" required>
+        <input type="email" name="email" id="name" placeholder="Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Message..." class="contact-inputs" required></textarea>
+        <button type="Submit">Submit <img src="/images/arrow_icon.png" alt=""></button>
+      </form>
+      <div clas="contact-right">
+        <img src="/images/right_img.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!--Social Media links-->
 
   <div class="socialmedia">
     <a href="https://www.linkedin.com/in/jacob-seto-985b6825b/">

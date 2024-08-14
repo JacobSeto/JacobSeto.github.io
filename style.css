@@ -3,6 +3,12 @@ html {
   height: 100%;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -36,10 +42,12 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #38444d;
+  position: sticky;
 }
 
 li {
   float: left;
+  position: sticky;
 }
 
 li a,
@@ -85,13 +93,170 @@ li.dropdown {
   display: block;
 }
 
-/* Contact*/
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* Projects*/
+.title {
+  text-align: center;
 }
+
+.title p {
+  color: #0d71fc;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
+.timeline {
+  margin: 5em auto;
+  max-width: 34.15rem;
+}
+
+.checkpoint h2 {
+  position: relative;
+  text-align: center;
+  top: 0%;
+  left: 0%;
+  font-size: 2em;
+}
+
+.checkpoint h3 {
+  position: absolute;
+  text-align: center;
+  transform: translate(-3.5em);
+  font-size: 2em;
+}
+
+.checkpoint {
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+
+.checkpoint h1 {
+  margin: 0.3em;
+  font-size: 3em;
+  text-align: center;
+}
+
+.checkpoint div {
+  border: 2px solid #fff;
+  border-radius: 1em;
+  padding: 1.5em;
+}
+
+.checkpoint div onmouseenter {
+  background-color: white;
+}
+
+.checkpoint div onmouseout {
+  background: none;
+}
+
+.checkpoint div :hover {
+  cursor: pointer;
+}
+
+.checkpoint p {
+  line-height: 27px;
+  color: #ccc;
+}
+
+.checkpoint:nth-child(odd) {
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translateX(50%);
+}
+
+.checkpoint:nth-child(even) {
+  border-right: 3px solid #888;
+  padding-right: 3em;
+  transform: translateX(-50%);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+  content: "";
+  background-color: #888;
+  width: 3em;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before {
+  left: 0;
+
+}
+
+.checkpoint:nth-child(even)::before {
+  right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before {
+  content: "";
+  background-color: #fff;
+  box-shadow: 0 0 0.5em #0d71fc;
+  width: .8em;
+  height: .8em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+  left: -.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+  right: -.5em;
+}
+
+.checkpoint label {
+  text-align: center;
+  position: relative;
+}
+
+.checkpoint:nth-child(odd) label {
+  left: -3em;
+  top: 40%;
+}
+
+.checkpoint:nth-child(even) label {
+  right: -10em;
+  top: 40%;
+}
+
+
+
+/* Style the socialmedia div */
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  /* Ensure it spans the entire width */
+  position: absolute;
+  bottom: 20px;
+  /* 20 pixels above the bottom */
+  left: 0;
+}
+
+.socialmedia a {
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 32px;
+  /* Adjust size as needed */
+  height: 32px;
+  /* Adjust size as needed */
+}
+
+
+/* Contact*/
 
 .contact-container {
   height: 100vh;
@@ -184,29 +349,4 @@ li.dropdown {
   .contact-right {
     display: none;
   }
-}
-
-/* Style the socialmedia div */
-.socialmedia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 100%;
-  /* Ensure it spans the entire width */
-  position: absolute;
-  bottom: 20px;
-  /* 20 pixels above the bottom */
-  left: 0;
-}
-
-.socialmedia a {
-  margin: 0 10px;
-}
-
-.socialmedia img {
-  width: 32px;
-  /* Adjust size as needed */
-  height: 32px;
-  /* Adjust size as needed */
 }
