@@ -48,6 +48,7 @@ ul {
   background-color: #38444d;
   top: 0;
   width: 100%;
+  position: relative
 }
 
 li {
