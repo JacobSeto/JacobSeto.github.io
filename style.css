@@ -14,7 +14,7 @@ body {
   margin-right: 100px;
   margin-left: 10px;
   background: linear-gradient(rgb(48, 48, 166), rgb(55, 71, 119));
-  font-family: 'Outfit';
+  font-family: 'Roboto', sans-serif;
   padding: 2em;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,6 +25,7 @@ h1 {
   margin-bottom: 20px;
   /* Adjust the spacing between the header and iframe */
   text-align: center;
+  font-size: xx-large;
 
 }
 
@@ -40,7 +41,16 @@ p {
   margin-left: 20px;
 }
 
-ul {
+a {
+  color: white;
+}
+
+/*Navbar*/
+.navbar {
+  padding-bottom: 50px;
+}
+
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -48,14 +58,14 @@ ul {
   background-color: #38444d;
   top: 0;
   width: 100%;
-  position: relative
+  position: fixed;
 }
 
-li {
+.navbar li {
   float: left;
 }
 
-li a,
+.navbar li a,
 .dropbtn {
   display: inline-block;
   color: white;
@@ -65,17 +75,12 @@ li a,
 }
 
 
-li a:hover,
+.navbar li a:hover,
 .dropdown:hover .dropbtn {
   background-color: red;
 }
 
-/*Navbar*/
-.navbar {
-  padding-bottom: 50px;
-}
-
-li.dropdown {
+.navbar li.dropdown {
   display: inline-block;
 }
 
@@ -105,14 +110,34 @@ li.dropdown {
 }
 
 
+/** About */
+.about {
+  padding-top: 100px;
+  /* Adjust this value based on your header height */
+  margin-top: -100px;
+}
+
+.about h1 {
+  color: white;
+  font-size: 120px;
+  text-align: center;
+}
+
 
 /* Projects*/
 .title {
   text-align: center;
+  padding-top: 25px;
+  /* Adjust this value based on your header height */
+  margin-top: -25px;
+}
+
+.title h1 {
+  padding-top: 50px;
 }
 
 .title p {
-  color: #0d71fc;
+  color: #9d9d9d;
   font-size: 1.3em;
   letter-spacing: 2px;
 }
@@ -120,6 +145,13 @@ li.dropdown {
 .timeline {
   margin: 5em auto;
   max-width: 34.15rem;
+}
+
+.checkpoint {
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
 }
 
 .checkpoint h2 {
@@ -130,24 +162,18 @@ li.dropdown {
   font-size: 2em;
 }
 
-.checkpoint h3 {
-  position: absolute;
-  text-align: center;
-  transform: translate(-3.5em);
-  font-size: 2em;
-}
-
-.checkpoint {
-  max-width: 34em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+.checkpoint ul {
   position: relative;
+  text-align: left;
+  top: 0%;
+  left: 0%;
+  font-size: medium;
+  padding-top: 25px;
 }
 
-.checkpoint h1 {
-  margin: 0.3em;
-  font-size: 3em;
-  text-align: center;
+.checkpoint li {
+  color: white;
+  padding-bottom: 10px;
 }
 
 .checkpoint div {
@@ -228,18 +254,31 @@ li.dropdown {
 
 .checkpoint label {
   text-align: center;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  font-size: 45px;
+  top: 50%;
+  /* Center vertically */
+  transform: translateY(-50%);
+  /* Adjust the position */
+  white-space: nowrap;
 }
 
 .checkpoint:nth-child(odd) label {
-  left: -3em;
-  top: 40%;
+  right: 110%;
+  /* Adjust this value if needed */
+  transform: translateY(-50%);
+  text-align: right;
 }
 
 .checkpoint:nth-child(even) label {
-  right: -10em;
-  top: 40%;
+  left: 110%;
+  /* Adjust this value if needed */
+  transform: translateY(-50%);
+  text-align: left;
 }
+
 
 
 
