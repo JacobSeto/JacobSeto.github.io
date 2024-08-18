@@ -136,15 +136,19 @@ a {
 
 .about p {
   color: rgba(255, 255, 255, 0.75);
-  width: 60%; /* Adjust as needed */
-  margin: 0; /* Ensure no additional margins interfere */
+  width: 60%;
+  /* Adjust as needed */
+  margin: 0;
+  /* Ensure no additional margins interfere */
 }
 
 .about-image {
   max-width: 35%;
   height: auto;
-  border-radius: 10px; /* Slightly rounded edges */
+  border-radius: 10px;
+  /* Slightly rounded edges */
   margin-left: 20px;
+  width: 75%;
 }
 
 
