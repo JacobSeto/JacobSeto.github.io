@@ -23,7 +23,6 @@ body {
 h1 {
   padding-top: 50px;
   color: white;
-  margin-bottom: 20px;
   /* Adjust the spacing between the header and iframe */
   text-align: center;
   font-size: 60px;
@@ -150,8 +149,21 @@ a {
 .checkpoint {
   max-width: 34em;
   position: relative;
-  margin-bottom: -4em;
+  margin-bottom: -7.5em;
 }
+
+.checkpoint img {
+  max-width: 100%;
+  /* Ensure the image does not exceed the width of the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 1em;
+  /* Match the border radius of the checkpoint div */
+  display: block;
+  margin: 0 auto;
+  /* Center the image */
+}
+
 
 .checkpoint h2 {
   position: relative;
@@ -189,7 +201,7 @@ a {
 }
 
 .blue-border div {
-  border: 3px solid lightblue;
+  border: 3px solid cyan;
 }
 
 .checkpoint div onmouseenter {
@@ -198,10 +210,6 @@ a {
 
 .checkpoint div onmouseout {
   background: none;
-}
-
-.checkpoint div :hover {
-  cursor: pointer;
 }
 
 .checkpoint p {
@@ -300,6 +308,7 @@ a {
   padding: 10px;
   width: 100%;
   bottom: 0;
+  margin-bottom: 25px;
 }
 
 .socialmedia a {
