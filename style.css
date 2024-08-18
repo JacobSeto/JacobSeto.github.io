@@ -135,7 +135,7 @@ a {
 }
 
 .about-text {
-  width: 60%;
+  width: 75%;
   /* This controls the width of the text content */
 }
 
@@ -149,7 +149,7 @@ a {
 
 .about p {
   padding-bottom: 50px;
-  padding-left: 35px;
+  padding-left: 100px;
 }
 
 
