@@ -9,32 +9,6 @@
 </head>
 
 <body>
-  <!--Navigation Bar-->
-  <div class="navbar">
-    <ul>
-      <li><a class="active" href="#about">About</a></li>
-      <li class="dropdown">
-        <a href="#projects" class="dropbtn" class="active">Projects</a>
-        <div class="dropdown-content">
-          <a href="#serve">SERVE</a>
-          <a href="#hammer">Completely Hammered</a>
-          <a href="#rabbeat">RabBeat</a>
-          <a href="#tilly">Tilly's Critter Command</a>
-          <a href="#polylect">Polylect</a>
-          <a href="#light">Light Up The Stage</a>
-          <a href="#rainbow">Rainbow Card Rumble</a>
-          <a href="#fury">Fury of The Lost Knight</a>
-          <a href="#flock-arena">Flock Arena</a>
-          <a href="#carbon">Carbon Footprint Calc</a>
-          <a href="#planetoids">Planetoids</a>
-          <a href="#castaways">castaways</a>
-        </div>
-      </li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-
   <!--About me-->
   <section id="about" class="about">
     <h1>Jacob Seto</h1>
@@ -47,11 +21,15 @@
         <img src="/images/github.png" alt="github">
       </a>
     </div>
-    <p>Current undergraduate student at Cornell University. I love game design, project management, and playing my
-      cello! I'm
-      passionate when it comes to leading, however, I equally enjoy being a team player to make the most out of all of
-      my projects. Follow my journey and send me a message, always happy to meet new people!
-    </p>
+    <div class="about-content">
+      <p>
+        Current undergraduate student at Cornell University. I love game design, project management, and playing my
+        cello! I'm passionate when it comes to leading, however, I equally enjoy being a team player to make the most
+        out
+        of all of my projects. Follow my journey and send me a message, always happy to meet new people!
+      </p>
+      <img src="/images/jacob.png" alt="Jacob Seto" class="about-image">
+    </div>
   </section>
 
   <!--Projects-->
@@ -110,6 +88,9 @@
           <div>
             <label>May, 2024</label>
             <h2>Rabbeat</h2>
+            <a href="https://we8-studios.itch.io/rabbeat" target="_blank">
+              <img class="checkpoint-image" src="images\RabBeat Crop.png" alt="RabBeat Crop">
+            </a>
             <ul>
               <li>Role: Project Lead</li>
               <li>Software/Tools: Intellij, Tiled, Github</li>
@@ -118,7 +99,6 @@
             <p> 2D Music-Platformer where you play a rabbit named Synth who can control the flow of the
               rhythmically-tied world. Use your powers to rescue your friends from the evil DJ scientist Dr. Nocturne
               and hop around the musical mutants that dance in your way!</p>
-            <a href="https://we8-studios.itch.io/rabbeat">RabBeat itch.io</a>
           </div>
         </a>
       </div>
@@ -129,6 +109,7 @@
           <div>
             <label>May, 2024</label>
             <h2>Tilly's Critter Command</h2>
+            <img class="checkpoint-image" src="images\Tilly.png" alt="RabBeat Crop"><img />
             <ul>
               <li>Role: Programmer</li>
               <li>Software/Tools: Unity, Github, Slack, Unity Engine AI</li>
@@ -199,6 +180,9 @@
           <div>
             <label>August, 2023</label>
             <h2>Fury of The Lost Knight</h2>
+            <a href="https://dgacornell.itch.io/fury-of-the-lost-knight" target="_blank">
+              <img class="checkpoint-image" src="images\Fury of The Lost Knight Promotional.jpg" alt="Fury Promo">
+            </a>
             <ul>
               <li>Role: Project Lead & Programmer</li>
               <li>Software/Tools: Unity, Github</li>
@@ -233,6 +217,7 @@
           <div>
             <label>December 2022</label>
             <h2>Planetoids</h2>
+            <img class="checkpoint-image" src="images\planetoids.png" alt="Planetoids"><img />
             <ul>
               <li>Role: Project Member</li>
               <li>Software/Tools: Python</li>
@@ -283,8 +268,8 @@
   <section id="resume">
     <div class="resume">
       <h1>Resume</h1>
-      <a href="https://docs.google.com/document/d/1r9o2DNTMDlrD4LBmA74F3VQW3Fn3WnR1y1Qh7ofKE_0/export?format=pdf">Download
-        Resume</a>
+      <a href="https://docs.google.com/document/d/1r9o2DNTMDlrD4LBmA74F3VQW3Fn3WnR1y1Qh7ofKE_0/export?format=pdf">
+        Download</a>
       <iframe
         src="https://docs.google.com/document/d/e/2PACX-1vSUMdMNC3qduzBpYzty222dLUUnvoSs7UF23RODohVyTrWJVTsOC5xBy5dMYdL3xSvCEB6wolkIb30b/pub?embedded=true"></iframe>
     </div>
@@ -311,6 +296,32 @@
     </div>
   </section>
   <p>© 2024 Jacob Seto. All rights reserved.</p>
+
+  <!--Navigation Bar-->
+  <div class="navbar">
+    <ul>
+      <li><a class="active" href="#about">About</a></li>
+      <li class="dropdown">
+        <a href="#projects" class="dropbtn" class="active">Projects</a>
+        <div class="dropdown-content">
+          <a href="#serve">SERVE</a>
+          <a href="#hammer">Completely Hammered</a>
+          <a href="#rabbeat">RabBeat</a>
+          <a href="#tilly">Tilly's Critter Command</a>
+          <a href="#polylect">Polylect</a>
+          <a href="#light">Light Up The Stage</a>
+          <a href="#rainbow">Rainbow Card Rumble</a>
+          <a href="#fury">Fury of The Lost Knight</a>
+          <a href="#flock-arena">Flock Arena</a>
+          <a href="#carbon">Carbon Footprint Calc</a>
+          <a href="#planetoids">Planetoids</a>
+          <a href="#castaways">castaways</a>
+        </div>
+      </li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
 
 </body>
