@@ -132,10 +132,11 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 20px;
+  width: 100%;
 }
 
 .about-text {
-  width: 75%;
+  width: 100%;
   /* This controls the width of the text content */
 }
 
@@ -149,7 +150,8 @@ a {
 
 .about p {
   padding-bottom: 50px;
-  padding-left: 100px;
+  padding-left: 150px;
+  width: 60%;
 }
 
 
