@@ -37,9 +37,9 @@ h2 {
 }
 
 p {
-  color: rgba(255, 255, 255, 0.75);
-  margin-left: 20px;
+  color: rgba(255, 255, 255, 0.85);
   width: 50%;
+  font-size: large;
 }
 
 a {
@@ -134,21 +134,22 @@ a {
   margin-top: 20px;
 }
 
-.about p {
-  color: rgba(255, 255, 255, 0.75);
+.about-text {
   width: 60%;
-  /* Adjust as needed */
-  margin: 0;
-  /* Ensure no additional margins interfere */
+  /* This controls the width of the text content */
 }
 
 .about-image {
-  max-width: 35%;
+  width: 40%;
   height: auto;
   border-radius: 10px;
   /* Slightly rounded edges */
   margin-left: 20px;
-  width: 75%;
+}
+
+.about p {
+  padding-bottom: 50px;
+  padding-left: 10px;
 }
 
 
@@ -161,8 +162,6 @@ a {
 }
 
 .title p {
-  color: #9d9d9d;
-  font-size: 1.3em;
   letter-spacing: 2px;
   text-align: center;
   width: 100%;
@@ -213,6 +212,11 @@ a {
 .checkpoint li {
   color: white;
   padding-bottom: 10px;
+}
+
+.checkpoint p {
+  text-align: center;
+  width: 100%;
 }
 
 .checkpoint div {
