@@ -21,11 +21,12 @@ body {
 }
 
 h1 {
+  padding-top: 50px;
   color: white;
   margin-bottom: 20px;
   /* Adjust the spacing between the header and iframe */
   text-align: center;
-  font-size: xx-large;
+  font-size: 60px;
 
 }
 
@@ -72,6 +73,7 @@ a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 
@@ -84,10 +86,12 @@ a {
   display: inline-block;
 }
 
+
+
 .dropdown-content {
   display: none;
   position: fixed;
-  background-color: #f9f9f9;
+  background-color: gray;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -102,7 +106,7 @@ a {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: grey;
 }
 
 .dropdown:hover .dropdown-content {
@@ -132,10 +136,6 @@ a {
   margin-top: -25px;
 }
 
-.title h1 {
-  padding-top: 50px;
-}
-
 .title p {
   color: #9d9d9d;
   font-size: 1.3em;
@@ -149,9 +149,8 @@ a {
 
 .checkpoint {
   max-width: 34em;
-  padding-top: 2em;
-  padding-bottom: 2em;
   position: relative;
+  margin-bottom: -4em;
 }
 
 .checkpoint h2 {
@@ -177,9 +176,20 @@ a {
 }
 
 .checkpoint div {
-  border: 2px solid #fff;
   border-radius: 1em;
   padding: 1.5em;
+}
+
+.white-border div {
+  border: 3px solid white;
+}
+
+.green-border div {
+  border: 3px solid lightgreen;
+}
+
+.blue-border div {
+  border: 3px solid lightblue;
 }
 
 .checkpoint div onmouseenter {
@@ -266,14 +276,14 @@ a {
 }
 
 .checkpoint:nth-child(odd) label {
-  right: 110%;
+  right: 105%;
   /* Adjust this value if needed */
   transform: translateY(-50%);
   text-align: right;
 }
 
 .checkpoint:nth-child(even) label {
-  left: 110%;
+  left: 105%;
   /* Adjust this value if needed */
   transform: translateY(-50%);
   text-align: left;
