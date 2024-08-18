@@ -129,7 +129,7 @@ a {
 
 .about-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   margin-top: 20px;
   width: 100%;
@@ -141,17 +141,18 @@ a {
 }
 
 .about-image {
-  width: 40%;
+  width: 30%;
   height: auto;
   border-radius: 10px;
   /* Slightly rounded edges */
-  margin-left: 20px;
+  margin-left: 100px;
+  text-align: center;
 }
 
 .about p {
   padding-bottom: 50px;
   padding-left: 150px;
-  width: 60%;
+  width: 70%;
 }
 
 
