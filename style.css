@@ -13,7 +13,7 @@ body {
   height: 100%;
   margin-right: 100px;
   margin-left: 10px;
-  background: linear-gradient(rgb(48, 48, 166), rgb(55, 71, 119));
+  background: linear-gradient(rgb(42, 42, 171), rgb(77, 97, 160));
   font-family: 'Roboto', sans-serif;
   padding: 2em;
   background-repeat: no-repeat;
@@ -476,11 +476,14 @@ a {
 }
 
 .resume a {
-  color: red;
+  margin-top: 10px;
+  font-size: 25px
 }
 
 .resume iframe {
+  margin-top: 15px;
   width: 800px;
   height: 1100px;
   border: none;
+  margin-bottom: -200px;
 }
