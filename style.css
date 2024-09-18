@@ -451,17 +451,6 @@ a {
   width: 500px;
 }
 
-@media (max-width: 800px) {
-
-  .contact-inputs {
-    width: 80vw;
-  }
-
-  .contact-right {
-    display: none;
-  }
-}
-
 .resume {
   display: flex;
   flex-direction: column;
@@ -483,7 +472,115 @@ a {
 .resume iframe {
   margin-top: 15px;
   width: 800px;
-  height: 1100px;
+  height: 1160px;
   border: none;
-  margin-bottom: -200px;
+  margin-bottom: -100px;
+}
+
+@media (max-width: 800px) {
+
+  body {
+    padding: 0.5em;
+    /* Reduce padding to shrink overall body gaps */
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin: 0.5em 0;
+    /* Reduce margins around headings */
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    /* Reduce margins around sub-headings */
+  }
+
+  p {
+    font-size: medium;
+    width: 100%;
+    margin: 0.5em 0;
+    /* Reduce paragraph margins */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    /* Remove any unwanted margin in navbar */
+  }
+
+  .about-content {
+    flex-direction: column;
+    margin: 1em 0;
+    /* Reduce margins between about content and other sections */
+  }
+
+  .about-image {
+    width: 80%;
+    margin: 0.5em auto;
+    /* Reduce margin for about image */
+  }
+
+  .about-text {
+    width: 100%;
+    padding-left: 0;
+    margin: 0.5em 0;
+    /* Reduce text margins in about section */
+  }
+
+  .timeline {
+    transform: scale(0.6);
+    margin-top: -1250px;
+    /* Reduce margin to avoid large gaps */
+    transition: transform 0.3s ease;
+  }
+
+  .checkpoint {
+    padding: 0.5em;
+    /* Reduce padding to shrink checkpoint space */
+    transform: translateX(0%);
+  }
+
+  .checkpoint:nth-child(odd),
+  .checkpoint:nth-child(even) {
+    border-left: none;
+    border-right: none;
+  }
+
+  .socialmedia img {
+    width: 40px;
+    height: 40px;
+    margin: 0.5em;
+    /* Reduce margin around social media icons */
+  }
+
+  .contact-inputs {
+    width: 80vw;
+    margin: 0.5em 0;
+    /* Reduce margins between input fields */
+  }
+
+  .contact-right {
+    display: none;
+  }
+
+  .resume h1 {
+    margin-top: -1450px;
+  }
+
+  .resume a {
+    margin-top: -10px;
+    font-size: 25px;
+    margin-bottom: -150px;
+  }
+
+  .resume iframe {
+    transform: scale(0.7);
+  }
+
+  .contact-container {
+    margin-top: -400px;
+  }
 }
