@@ -523,16 +523,14 @@ a {
     /* Reduce margin for about image */
   }
 
-  .about-text {
-    width: 100%;
-    padding-left: 0;
-    margin: 0.5em 0;
-    /* Reduce text margins in about section */
+  .about p {
+    padding-bottom: 10px;
+    width: 90%;
   }
 
   .timeline {
-    transform: scale(0.6);
-    margin-top: -1250px;
+    transform: scale(0.5);
+    margin-top: -1550px;
     /* Reduce margin to avoid large gaps */
     transition: transform 0.3s ease;
   }
@@ -567,20 +565,20 @@ a {
   }
 
   .resume h1 {
-    margin-top: -1450px;
+    margin-top: -2100px;
   }
 
   .resume a {
     margin-top: -10px;
     font-size: 25px;
-    margin-bottom: -150px;
+    margin-bottom: -300px;
   }
 
   .resume iframe {
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
 
   .contact-container {
-    margin-top: -400px;
+    margin-top: -800px;
   }
 }
