@@ -4,14 +4,14 @@ export default function About() {
       <h1>Jacob Seto</h1>
       <div className="socialmedia">
         <a href="https://www.linkedin.com/in/jacob-j-seto">
-          <img src="/images/linkedin.png" alt="linkedin" />
+          <img src="/src/assets/images/linkedin.png" alt="linkedin" />
         </a>
         <a href="https://github.com/JacobSeto">
-          <img src="/images/github.png" alt="github" />
+          <img src="/src/assets/images/github.png" alt="github" />
         </a>
       </div>
       <div className="about-content">
-        <img src="/images/Me.png" alt="Jacob Seto" className="about-image" />
+        <img src="/src/assets/images/Me.png" alt="Jacob Seto" className="about-image" />
         <div className="about-text">
           <p>Hi, thanks for checking out my website!</p>
           <p>

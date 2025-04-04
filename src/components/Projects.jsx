@@ -35,7 +35,7 @@ export default function Projects() {
               <label>August, 2024</label>
               <h2>Completely Hammered</h2>
               <a href="https://dgacornell.itch.io/completely-hammered" target="_blank" rel="noopener noreferrer">
-                <img className="checkpoint-image" src="/images/Completely Hammered Cover.png" alt="Completely Hammered Cover" />
+                <img className="checkpoint-image" src="/src/assets/images/Completely Hammered Cover.png" alt="Completely Hammered Cover" />
               </a>
               <ul>
                 <li>Role: Project Lead</li>
@@ -54,7 +54,7 @@ export default function Projects() {
               <label>May, 2024</label>
               <h2>Rabbeat</h2>
               <a href="https://we8-studios.itch.io/rabbeat" target="_blank" rel="noopener noreferrer">
-                <img className="checkpoint-image" src="/images/RabBeat Crop.png" alt="RabBeat Crop" />
+                <img className="checkpoint-image" src="/src/assets/images/RabBeat Crop.png" alt="RabBeat Crop" />
               </a>
               <ul>
                 <li>Role: Project Lead</li>
@@ -73,7 +73,7 @@ export default function Projects() {
               <label>May, 2024</label>
               <h2>Tilly's Critter Command</h2>
               <a href="https://dgacornell.itch.io/tillys-critter-command" target="_blank" rel="noopener noreferrer">
-                <img className="checkpoint-image" src="/images/Tilly.PNG" alt="Tilly" />
+                <img className="checkpoint-image" src="/src/assets/images/Tilly.PNG" alt="Tilly" />
               </a>
               <ul>
                 <li>Role: Programmer</li>
@@ -108,7 +108,7 @@ export default function Projects() {
               <label>December, 2023</label>
               <h2>Light Up the Stage</h2>
               <a href="https://tuxsetoxtreme.itch.io/light-up-the-stage" target="_blank" rel="noopener noreferrer">
-                <img className="checkpoint-image" src="/images/Light Up The Stage Snapshot.png" alt="Light Up The Stage" />
+                <img className="checkpoint-image" src="/src/assets/images/Light Up The Stage Snapshot.png" alt="Light Up The Stage" />
               </a>
               <ul>
                 <li>Role: Solo</li>
@@ -143,7 +143,7 @@ export default function Projects() {
               <label>August, 2023</label>
               <h2>Fury of The Lost Knight</h2>
               <a href="https://dgacornell.itch.io/fury-of-the-lost-knight" target="_blank" rel="noopener noreferrer">
-                <img className="checkpoint-image" src="/images/Fury of The Lost Knight Promotional.jpg" alt="Fury Promo" />
+                <img className="checkpoint-image" src="/src/assets/images/Fury of The Lost Knight Promotional.jpg" alt="Fury Promo" />
               </a>
               <ul>
                 <li>Role: Project Lead & Programmer</li>
@@ -164,7 +164,7 @@ export default function Projects() {
             <div>
               <label>May, 2023</label>
               <h2>Flock Arena</h2>
-              <img className="checkpoint-image" src="/images/Flock Screenshot.png" alt="Flock Screenshot" />
+              <img className="checkpoint-image" src="/src/assets/images/Flock Screenshot.png" alt="Flock Screenshot" />
               <ul>
                 <li>Role: Solo</li>
                 <li>Software/Tools: Unity, Github, Photon Engine</li>
@@ -181,7 +181,7 @@ export default function Projects() {
             <div>
               <label>December, 2022</label>
               <h2>Planetoids</h2>
-              <img className="checkpoint-image" src="/images/planetoids.png" alt="Planetoids" />
+              <img className="checkpoint-image" src="/src/assets/images/planetoids.png" alt="Planetoids" />
               <ul>
                 <li>Role: Project Member</li>
                 <li>Software/Tools: Python</li>
@@ -198,7 +198,7 @@ export default function Projects() {
             <div>
               <label>October, 2022</label>
               <h2>Carbon Footprint Calculator</h2>
-              <img className="checkpoint-image" src="/images/Carbon Snapshot.png" alt="Carbon Snapshot" />
+              <img className="checkpoint-image" src="/src/assets/images/Carbon Snapshot.png" alt="Carbon Snapshot" />
               <ul>
                 <li>Role: BigRed//Hacks Participant</li>
                 <li>Software/Tools: Unity, C#</li>
@@ -215,7 +215,7 @@ export default function Projects() {
             <div>
               <label>February, 2021</label>
               <h2>Castaways</h2>
-              <img className="checkpoint-image" src="/images/Castaway Snapshot.png" alt="Castaway Snapshot" />
+              <img className="checkpoint-image" src="/src/assets/images/Castaway Snapshot.png" alt="Castaway Snapshot" />
               <ul>
                 <li>Role: Solo</li>
                 <li>Software/Tools: Unity, C#</li>
