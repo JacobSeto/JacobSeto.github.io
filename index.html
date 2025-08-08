@@ -5,24 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/images/icon.ico">
   <link rel="stylesheet" href="style.css">
-
+  <title>Jacob Seto</title>
 </head>
 
 <body>
+  <!--Navigation Bar-->
+  <header class="site-header">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <a href="#about" class="brand">JS</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a class="active" href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <!--About me-->
   <section id="about" class="about">
     <h1>Jacob Seto</h1>
     <!--Social Media links-->
     <div class="socialmedia">
-      <a href="https://www.linkedin.com/in/jacob-j-seto">
+      <a href="https://www.linkedin.com/in/jacob-j-seto" target="_blank" rel="noopener">
         <img src="/images/linkedin.png" alt="linkedin">
       </a>
-      <a href="https://github.com/JacobSeto">
+      <a href="https://github.com/JacobSeto" target="_blank" rel="noopener">
         <img src="/images/github.png" alt="github">
       </a>
     </div>
+
+    <div class="about-hero">
+      <img src="/images/Me.png" alt="Jacob Seto" class="about-image reveal-left">
+
+      <div class="about-slideshow reveal-right" aria-label="Photo slideshow">
+        <div class="slides">
+          <img src="/images/Completely Hammered Cover.png" alt="Completely Hammered" data-caption="DGA game jam project: Completely Hammered">
+          <img src="/images/RabBeat Crop.png" alt="RabBeat" data-caption="RabBeat: 2D rhythm-platformer">
+          <img src="/images/Tilly.PNG" alt="Tilly's Critter Command" data-caption="Unity AI semester project: Tilly's Critter Command">
+          <img src="/images/Fury of The Lost Knight Promotional.jpg" alt="Fury of The Lost Knight" data-caption="DGA project lead: Fury of The Lost Knight">
+          <img src="/images/Flock Screenshot.png" alt="Flock Arena" data-caption="Solo multiplayer prototype: Flock Arena">
+        </div>
+        <button class="slide-btn prev" aria-label="Previous slide">‹</button>
+        <button class="slide-btn next" aria-label="Next slide">›</button>
+        <div class="dots" aria-hidden="true"></div>
+      </div>
+    </div>
+
     <div class="about-content">
-      <img src="/images/Me.png" alt="Jacob Seto" class="about-image">
       <div class="about-text">
         <!--Introduction-->
         <p>
@@ -38,6 +71,11 @@
         <p> In my downtime, I work on my own game projects, all titled with the prefix "Flock"—a nod to the name of one of my earliest video games I made in high school. I look up to games like <i>Slay the Spire</i> and <i>Risk of Rain 2</i> for their ingenuity in their respective genres, and I aspire to create a game of similar caliber. I also love playing board games and iterating on their designs, adding my own custom content and rules to explore new mechanics. Recently, I got back into <i>Magic: The Gathering</i>, and play weekly at a local card shop. My first video game, <a href="#castaways">Castaways</a>, was a Survival card game I made when I was just 14, which ignited my passion for game design.
         </p>
       </div>
+
+      <div class="featured-article">
+        <h2>Featured Article</h2>
+        <a href="https://news.cornell.edu/stories/2025/03/dgas-first-game-jam-gives-game-developers-chance-level" target="_blank" rel="noopener">DGA’s first game jam gives game developers a chance to level up</a>
+      </div>
     </div>
   </section>
 
@@ -48,10 +86,9 @@
       <p>This is a timeline of all the projects I have contributed to throughout my career. Click on the images inside of the blocks to learn more about each project.</p>
       <p>Border Outlines:</p>
       <p><span style="color:white;">White</span> → Personal Project</p> <p><span style="color:lightgreen;">Green</span> → Group Project</p><p><span style="color:cyan;">Blue</span> → Research</p>
-
     </div>
 
-    <div class="timeline">
+    <div class="timeline reveal-fade">
 
       <div class="checkpoint blue-border">
         <a id="serve">
@@ -93,7 +130,7 @@
             <label>May, 2024</label>
             <h2>Rabbeat</h2>
             <a href="https://we8-studios.itch.io/rabbeat" target="_blank">
-              <img class="checkpoint-image" src="images\RabBeat Crop.png" alt="RabBeat Crop">
+              <img class="checkpoint-image" src="images/RabBeat Crop.png" alt="RabBeat Crop">
             </a>
             <ul>
               <li>Role: Project Lead</li>
@@ -112,7 +149,7 @@
             <label>May, 2024</label>
             <h2>Tilly's Critter Command</h2>
             <a href="https://dgacornell.itch.io/tillys-critter-command" target="_blank">
-              <img class="checkpoint-image" src="images\Tilly.PNG" alt="Tilly">
+              <img class="checkpoint-image" src="images/Tilly.PNG" alt="Tilly">
             </a>
             <ul>
               <li>Role: Programmer</li>
@@ -147,8 +184,7 @@
             <label>December, 2023</label>
             <h2>Light Up the Stage</h2>
             <a href="https://tuxsetoxtreme.itch.io/light-up-the-stage" target="_blank">
-              <img class="checkpoint-image" src="images\Light Up The Stage Snapshot.png"
-                alt="Light Up The Stage"><img />
+              <img class="checkpoint-image" src="images/Light Up The Stage Snapshot.png" alt="Light Up The Stage">
             </a>
             <ul>
               <li>Role: Solo</li>
@@ -182,7 +218,7 @@
             <label>August, 2023</label>
             <h2>Fury of The Lost Knight</h2>
             <a href="https://dgacornell.itch.io/fury-of-the-lost-knight" target="_blank">
-              <img class="checkpoint-image" src="images\Fury of The Lost Knight Promotional.jpg" alt="Fury Promo">
+              <img class="checkpoint-image" src="images/Fury of The Lost Knight Promotional.jpg" alt="Fury Promo">
             </a>
             <ul>
               <li>Role: Project Lead & Programmer</li>
@@ -190,7 +226,7 @@
               <li>Platform: PC</li>
             </ul>
             <p>2D Action Platformer where you play as a knight named Tyr who is out for revenge against the evil Lich King Abraxor who destroyed their kingdom. Combines fast-paced combat, exploration, and puzzle-solving paired with stunning visuals and an unique pastel-pixel art style</p>
-            <a href="https://dgacornell.itch.io/fury-of-the-lost-knight">
+            <a href="https://dgacornell.itch.io/fury-of-the-lost-knight" target="_blank" rel="noopener">
               Fury of The Lost Knight itch.io
             </a>
           </div>
@@ -202,7 +238,7 @@
           <div>
             <label>May, 2023</label>
             <h2>Flock Arena</h2>
-            <img class="checkpoint-image" src="images\Flock Screenshot.png" alt="Flock Screenshot">
+            <img class="checkpoint-image" src="images/Flock Screenshot.png" alt="Flock Screenshot">
             <ul>
               <li>Role: Solo</li>
               <li>Software/Tools: Unity, Github, Photon Engine</li>
@@ -218,7 +254,7 @@
           <div>
             <label>December 2022</label>
             <h2>Planetoids</h2>
-            <img class="checkpoint-image" src="images\planetoids.png" alt="Planetoids"><img />
+            <img class="checkpoint-image" src="images/planetoids.png" alt="Planetoids">
             <ul>
               <li>Role: Project Member</li>
               <li>Software/Tools: Python</li>
@@ -234,7 +270,7 @@
           <div>
             <label>October 2022</label>
             <h2>Carbon Footprint Calculator</h2>
-            <img class="checkpoint-image" src="images\Carbon Snapshot.png" alt="Carbon Snapshot">
+            <img class="checkpoint-image" src="images/Carbon Snapshot.png" alt="Carbon Snapshot">
             <ul>
               <li>Role: BigRed//Hacks Participant</li>
               <li>Software/Tools: Unity, C#</li>
@@ -252,7 +288,7 @@
           <div>
             <label>February 2021</label>
             <h2>Castaways</h2>
-            <img class="checkpoint-image" src="images\Castaway Snapshot.png" alt="Castaway Snapshot">
+            <img class="checkpoint-image" src="images/Castaway Snapshot.png" alt="Castaway Snapshot">
             <ul>
               <li>Role: Solo</li>
               <li>Software/Tools: Unity, C#</li>
@@ -270,10 +306,10 @@
   <section id="resume">
     <div class="resume">
       <h1>Resume</h1>
-      <a href="https://docs.google.com/document/d/1r9o2DNTMDlrD4LBmA74F3VQW3Fn3WnR1y1Qh7ofKE_0/export?format=pdf">
+      <a href="https://docs.google.com/document/d/1r9o2DNTMDlrD4LBmA74F3VQW3Fn3WnR1y1Qh7ofKE_0/export?format=pdf" target="_blank" rel="noopener">
         Download</a>
       <iframe
-        src="https://docs.google.com/document/d/e/2PACX-1vSUMdMNC3qduzBpYzty222dLUUnvoSs7UF23RODohVyTrWJVTsOC5xBy5dMYdL3xSvCEB6wolkIb30b/pub?embedded=true"></iframe>
+        src="https://docs.google.com/document/d/e/2PACX-1vSUMdMNC3qduzBpYzty222dLUUnvoSs7UF23RODohVyTrWJVTsOC5xBy5dMYdL3xSvCEB6wolkIb30b/pub?embedded=true" title="Resume"></iframe>
     </div>
   </section>
 
@@ -288,44 +324,25 @@
         </div>
         <input type="hidden" name="access_key" value="41a36971-7dd7-4d39-9c74-51e7f9c8d64e">
         <input type="text" name="name" id="name" placeholder="Name" class="contact-inputs" required>
-        <input type="email" name="email" id="name" placeholder="Email" class="contact-inputs" required>
+        <input type="email" name="email" id="email" placeholder="Email" class="contact-inputs" required>
         <textarea name="message" placeholder="Message..." class="contact-inputs" required></textarea>
         <button type="Submit">Submit <img src="/images/arrow_icon.png" alt=""></button>
       </form>
       <div class="contact-right">
-        <img src="images\text bubble float.png" alt="">
+        <img src="images/text bubble float.png" alt="">
       </div>
     </div>
   </section>
-  <p>© 2024 Jacob Seto. All rights reserved.</p>
+  <p class="copyright">© 2024 Jacob Seto. All rights reserved.</p>
 
-  <!--Navigation Bar-->
-  <div class="navbar">
-    <ul>
-      <li><a class="active" href="#about">About</a></li>
-      <li class="dropdown">
-        <a href="#projects" class="dropbtn" class="active">Projects</a>
-        <div class="dropdown-content">
-          <a href="#serve">SERVE</a>
-          <a href="#hammer">Completely Hammered</a>
-          <a href="#rabbeat">RabBeat</a>
-          <a href="#tilly">Tilly's Critter Command</a>
-          <a href="#polylect">Polylect</a>
-          <a href="#light">Light Up The Stage</a>
-          <a href="#rainbow">Rainbow Card Rumble</a>
-          <a href="#fury">Fury of The Lost Knight</a>
-          <a href="#flock-arena">Flock Arena</a>
-          <a href="#carbon">Carbon Footprint Calc</a>
-          <a href="#planetoids">Planetoids</a>
-          <a href="#castaways">Castaways</a>
-        </div>
-      </li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img class="lightbox-image" alt="Expanded slideshow image">
+    <div class="lightbox-caption"></div>
   </div>
 
-
+  <script src="script.js"></script>
 </body>
 
 </html>
