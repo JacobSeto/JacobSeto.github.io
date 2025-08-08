@@ -361,10 +361,12 @@ body.menu-open .menu-overlay { opacity: 1; pointer-events: auto; }
   position: relative;
   width: 50%;
   padding: 0 24px 48px 24px;
+  margin: 0 0 48px 0;
 }
 
-.checkpoint:nth-child(odd) { left: 0; }
-.checkpoint:nth-child(even) { left: 50%; }
+/* align left/right using margin instead of left offset */
+.checkpoint:nth-child(odd) { margin-left: 0; }
+.checkpoint:nth-child(even) { margin-left: 50%; }
 
 .checkpoint img {
   max-width: 100%;
@@ -424,15 +426,11 @@ body.menu-open .menu-overlay { opacity: 1; pointer-events: auto; }
   width: 24px;
   height: 3px;
   background: #888;
+  transform: translateY(-50%);
 }
 
-.checkpoint:nth-child(odd)::before {
-  right: -3px;
-}
-
-.checkpoint:nth-child(even)::before {
-  left: -3px;
-}
+.checkpoint:nth-child(odd)::before { right: -3px; }
+.checkpoint:nth-child(even)::before { left: -3px; }
 
 /* glowing node */
 .checkpoint div::before {
@@ -592,7 +590,7 @@ section { scroll-margin-top: 80px; }
     align-items: center;
     justify-content: center;
     gap: 16px;
-    z-index: 1500;
+    z-index: 2000;
   }
   .nav-links.open { display: flex; }
 
@@ -603,7 +601,7 @@ section { scroll-margin-top: 80px; }
 
   .timeline::before { left: 16px; transform: none; }
   .timeline { max-width: 720px; }
-  .checkpoint { width: 100%; left: 0 !important; padding-left: 40px; }
+  .checkpoint { width: 100%; margin-left: 0 !important; padding-left: 40px; }
   .checkpoint::before { left: 0; right: auto; width: 16px; }
   .checkpoint div::before { left: -0.9em; right: auto; }
   .checkpoint label { position: relative; top: auto; transform: none; display: block; font-size: 24px; margin-bottom: 8px; left: 0; right: 0; text-align: left; }
