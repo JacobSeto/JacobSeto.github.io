@@ -563,11 +563,10 @@ section { scroll-margin-top: 80px; }
   transition: opacity 600ms ease, transform 600ms ease;
 }
 
-/* timeline items animate on scroll */
+/* timeline items visible by default */
 .timeline .checkpoint {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 600ms ease, transform 600ms ease;
+  opacity: 1;
+  transform: none;
 }
 
 .reveal-left { transform: translateX(-24px); }
