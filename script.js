@@ -1,11 +1,25 @@
 // Hamburger menu
 const hamburgerButton = document.querySelector('.hamburger');
 const navMenu = document.getElementById('nav-menu');
+const menuOverlay = document.querySelector('.menu-overlay');
 if (hamburgerButton && navMenu) {
-  hamburgerButton.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('open');
+  function setMenuState(isOpen) {
+    navMenu.classList.toggle('open', isOpen);
+    hamburgerButton.classList.toggle('active', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
     hamburgerButton.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  hamburgerButton.addEventListener('click', () => {
+    const willOpen = !navMenu.classList.contains('open');
+    setMenuState(willOpen);
   });
+
+  // Close when clicking overlay
+  menuOverlay?.addEventListener('click', () => setMenuState(false));
+
+  // Close when clicking a nav link (mobile)
+  navMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setMenuState(false)));
 }
 
 // Reveal on scroll
@@ -33,7 +47,12 @@ function setupSlideshow(container) {
   const nextBtn = container.querySelector('.next');
   const dotsContainer = container.querySelector('.dots');
 
-  if (images.length === 0) return;
+  if (images.length === 0) {
+    container.classList.add('no-content');
+    return;
+  } else {
+    container.classList.remove('no-content');
+  }
 
   let index = 0;
   let autoTimer = null;

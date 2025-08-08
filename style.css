@@ -13,10 +13,20 @@ html {
 body {
   min-height: 100%;
   margin: 0;
-  background: linear-gradient(to bottom, #0b1b77 0%, #0b2d8a 40%, #0a1230 80%, #06090e 100%);
   font-family: 'Roboto', sans-serif;
   color: white;
+  position: relative;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, #0b1b77 0%, #0b2d8a 40%, #0a1230 80%, #06090e 100%);
+}
+
+body.menu-open { overflow: hidden; }
 
 h1 {
   padding-top: 25px;
@@ -45,7 +55,7 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1600;
   backdrop-filter: saturate(180%) blur(10px);
 }
 
@@ -72,6 +82,8 @@ a {
   border: none;
   background: transparent;
   cursor: pointer;
+  position: relative;
+  z-index: 1700;
 }
 
 .hamburger span {
@@ -81,7 +93,24 @@ a {
   background: white;
   margin: 6px auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
 }
+
+.hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1400;
+}
+
+body.menu-open .menu-overlay { opacity: 1; pointer-events: auto; }
 
 .nav-links {
   list-style: none;
@@ -182,6 +211,21 @@ a {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
+
+.about-slideshow .slideshow-placeholder {
+  display: none;
+  position: absolute;
+  inset: 0;
+  place-items: center;
+  padding: 16px;
+  text-align: center;
+  color: rgba(255,255,255,0.85);
+  background: rgba(0,0,0,0.2);
+}
+
+.about-slideshow.no-content .slideshow-placeholder { display: grid; }
+.about-slideshow.no-content .slide-btn,
+.about-slideshow.no-content .dots { display: none; }
 
 .about-slideshow .slides {
   position: relative;
@@ -363,6 +407,7 @@ a {
 .checkpoint div {
   border-radius: 1em;
   padding: 1.5em;
+  position: relative;
 }
 
 .white-border div { border: 3px solid white; }
@@ -539,17 +584,20 @@ section { scroll-margin-top: 80px; }
 @media (max-width: 768px) {
   .hamburger { display: block; }
   .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: rgba(18, 24, 38, 0.95);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: fixed;
+    inset: 0;
+    background: transparent;
     display: none;
     flex-direction: column;
-    padding: 8px 8px 12px 8px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 1500;
   }
   .nav-links.open { display: flex; }
+
+  .nav-links li a { font-size: 1.5rem; padding: 12px 20px; }
 
   .about h1 { font-size: 56px; }
   .socialmedia img { width: 40px; height: 40px; }

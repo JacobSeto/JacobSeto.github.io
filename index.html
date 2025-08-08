@@ -25,6 +25,8 @@
     </nav>
   </header>
 
+  <div class="menu-overlay"></div>
+
   <!--About me-->
   <section id="about" class="about">
     <h1>Jacob Seto</h1>
@@ -42,13 +44,8 @@
       <img src="/images/Me.png" alt="Jacob Seto" class="about-image reveal-left">
 
       <div class="about-slideshow reveal-right" aria-label="Photo slideshow">
-        <div class="slides">
-          <img src="/images/Completely Hammered Cover.png" alt="Completely Hammered" data-caption="DGA game jam project: Completely Hammered">
-          <img src="/images/RabBeat Crop.png" alt="RabBeat" data-caption="RabBeat: 2D rhythm-platformer">
-          <img src="/images/Tilly.PNG" alt="Tilly's Critter Command" data-caption="Unity AI semester project: Tilly's Critter Command">
-          <img src="/images/Fury of The Lost Knight Promotional.jpg" alt="Fury of The Lost Knight" data-caption="DGA project lead: Fury of The Lost Knight">
-          <img src="/images/Flock Screenshot.png" alt="Flock Arena" data-caption="Solo multiplayer prototype: Flock Arena">
-        </div>
+        <div class="slides"></div>
+        <div class="slideshow-placeholder">Add <code>&lt;img&gt;</code> elements inside the <code>slides</code> container to populate this slideshow (recommended aspect ratio 4:3).</div>
         <button class="slide-btn prev" aria-label="Previous slide">‹</button>
         <button class="slide-btn next" aria-label="Next slide">›</button>
         <div class="dots" aria-hidden="true"></div>
@@ -91,7 +88,7 @@
     <div class="timeline reveal-fade">
 
       <div class="checkpoint blue-border">
-        <a id="serve">
+        <div id="serve">
           <div>
             <label>Current</label>
             <h2>SERVE</h2>
@@ -102,11 +99,11 @@
             </ul>
             <p>Responsible for the development of a VR multiplayer lobby in Unity to enable research participants to collaborate in several minigames and environments to be used for data collection</p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint green-border">
-        <a id="hammer">
+        <div id="hammer">
           <div>
             <label>August, 2024</label>
             <h2>Completely Hammered</h2>
@@ -121,11 +118,11 @@
             <p>2D Physics Platformer where you play as Tito, a mad scientist who uses his hammer to escape the lab and blast his way to the next party. 3 unique levels to explore and a built-in timer for hardcore gamers that compete for the fastest completion time
             </p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint green-border">
-        <a id="rabbeat">
+        <div id="rabbeat">
           <div>
             <label>May, 2024</label>
             <h2>Rabbeat</h2>
@@ -139,12 +136,12 @@
             </ul>
             <p> 2D Music-Platformer where you play a rabbit named Synth who can control the flow of the rhythmically-tied world. Use your powers to rescue your friends from the evil DJ scientist Dr. Nocturne and hop around the musical mutants that dance in your way!</p>
           </div>
-        </a>
+        </div>
       </div>
 
 
       <div class="checkpoint green-border">
-        <a id="tilly">
+        <div id="tilly">
           <div>
             <label>May, 2024</label>
             <h2>Tilly's Critter Command</h2>
@@ -159,12 +156,12 @@
             <p>A 3D Isometric Strategy game where you play as Tilly, a human who finds themselves in a vibrant world where emotions hold the key to survival. Tilly must harness and manipulate the feelings of the expressive creatures to drive out the emotionless robot bugs, ultimately reclaiming the world from the grip of apathy
             </p>
           </div>
-        </a>
+        </div>
       </div>
 
 
       <div class="checkpoint blue-border">
-        <a id="polylect">
+        <div id="polylect">
           <div>
             <label>May, 2024</label>
             <h2>Polylect</h2>
@@ -175,11 +172,11 @@
             </ul>
             <p>Cornell research project where I helped develop a 2D multiplayer navigation game to collect player data, which provided valuable insights to the study of linguistic behaviors in small networks</p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint white-border">
-        <a id="light">
+        <div id="light">
           <div>
             <label>December, 2023</label>
             <h2>Light Up the Stage</h2>
@@ -193,11 +190,11 @@
             </ul>
             <p>3D Platformer where you traverse through a pitch-black obstacle course, using only your footsteps and a ball of light to temporarily light up the hidden platforms. Take a leap of faith and navigate the unknown through a unique minimalist art style</p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint green-border">
-        <a id="rainbow">
+        <div id="rainbow">
           <div>
             <label>December, 2023</label>
             <h2>Rainbow Card Rumble</h2>
@@ -209,11 +206,11 @@
             <p>Final project for the Functional Programming class at Cornell. An Uno-like card game where you win by playing all cards in hand. However, some cards have special abilities that help you get closer or bring you further from victory!
             </p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint green-border">
-        <a id="fury">
+        <div id="fury">
           <div>
             <label>August, 2023</label>
             <h2>Fury of The Lost Knight</h2>
@@ -230,11 +227,11 @@
               Fury of The Lost Knight itch.io
             </a>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint white-border">
-        <a id="flock-arena">
+        <div id="flock-arena">
           <div>
             <label>May, 2023</label>
             <h2>Flock Arena</h2>
@@ -246,11 +243,11 @@
             </ul>
             <p>3D Multiplayer Hero Shooter with an in-depth skill tree and a reimagination of classic weapons of the genre. This encourages unique playstyles and dynamic gameplay compared to other popular FPS games</p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint green-border">
-        <a id="planetoids">
+        <div id="planetoids">
           <div>
             <label>December 2022</label>
             <h2>Planetoids</h2>
@@ -262,11 +259,11 @@
             </ul>
             <p>Final project for the Introduction to Computing class at Cornell. A clone of the classic game Planetoids with unique levels, enemies, and ship upgrades</p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint green-border">
-        <a id="carbon">
+        <div id="carbon">
           <div>
             <label>October 2022</label>
             <h2>Carbon Footprint Calculator</h2>
@@ -280,11 +277,11 @@
               molecules proportional to the user’s carbon footprint and generates a comprehensive emissions graph at the
               end of the simulation</p>
           </div>
-        </a>
+        </div>
       </div>
 
       <div class="checkpoint white-border">
-        <a id="castaways">
+        <div id="castaways">
           <div>
             <label>February 2021</label>
             <h2>Castaways</h2>
@@ -297,7 +294,7 @@
             <p>2D Turn-Based Strategy Game where you and your opponent battle for survival on a remote island. Collect
               resource cards to craft tools and play impactful action cards that increase your chances of survival</p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </section>
