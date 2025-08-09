@@ -66,12 +66,33 @@ export default function App() {
             <p>
               In my downtime, I work on my own game projects, all titled with the prefix "Flock"—a nod to the name of one
               of my earliest video games I made in high school. I look up to games like <i>Slay the Spire</i> and <i>Risk
-              of Rain 2</i> for their ingenuity in their respective genres, and I aspire to create a game of similar
+                of Rain 2</i> for their ingenuity in their respective genres, and I aspire to create a game of similar
               caliber. I also love playing board games and iterating on their designs, adding my own custom content and
               rules to explore new mechanics. Recently, I got back into <i>Magic: The Gathering</i>, and play weekly at a
               local card shop. My first video game, <a href="#castaways">Castaways</a>, was a Survival card game I made
               when I was just 14, which ignited my passion for game design.
             </p>
+          </div>
+        </div>
+        {/* Featured Article */}
+        <div className="article-card">
+          <div className="article-left">
+            <h2>
+              <a
+                href="https://prod.cis.cornell.edu/dgas-first-game-jam-gives-game-developers-chance-level"
+                target="_blank"
+                rel="noreferrer"
+                className="article-header-link"
+              >
+                Read Featured Article
+              </a>
+            </h2>
+          </div>
+          <div className="article-right">
+            <img
+              src="/images/Featured Article.webp"
+              alt="Featured article promo for Cornell Game Jam"
+            />
           </div>
         </div>
       </section>
