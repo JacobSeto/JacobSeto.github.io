@@ -475,84 +475,38 @@ a {
   margin-bottom: -100px;
 }
 
+/* Article Card */
 .article-card {
   border: 2px solid #fff;
-  /* white outline */
   border-radius: 16px;
   padding: 16px 20px;
   display: flex;
   align-items: center;
   gap: 20px;
   background: rgba(255, 255, 255, 0.03);
-  /* subtle backdrop, optional */
+  max-width: 35%;
+  margin-left: 100px;
 }
 
 .article-left {
   flex: 1;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .article-left a {
-  text-decoration: underline;
+  font-size: 50px;
 }
 
 .article-right {
-  flex: 0 0 320px;
-  /* image column width */
-  max-width: 100%;
+  flex: 0 0 auto;
+  max-width: 280px;
 }
 
 .article-right img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 12px;
-}
-
-/* Featured Article card layout */
-.article-card {
-  border: 2px solid #fff;
-  border-radius: 16px;
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: rgba(255, 255, 255, 0.03);
-
-  /* NEW: constrain width + left align */
-  max-width: 50%;
-  margin-left: 100px; /* aligns with your .about p left padding */
-}
-
-/* Make the link look like a header without default underline */
-.article-header-link {
-  color: inherit;          /* uses your h2 color (white) */
-  text-decoration: none;   /* no underline by default */
-}
-
-.article-header-link:hover {
-  text-decoration: underline;
-}
-
-/* Keep image column sane inside the half-width card */
-.article-right {
-  flex: 0 0 320px;
-  max-width: 100%;
-}
-
-.article-right img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-
-@media (max-width: 640px) {
-  .article-card {
-    max-width: 100%;
-    margin-left: 0;
-    flex-direction: column;
-    text-align: left;
-  }
 }
