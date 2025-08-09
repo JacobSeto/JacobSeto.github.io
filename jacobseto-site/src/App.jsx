@@ -380,7 +380,7 @@ export default function App() {
             </button>
           </form>
           <div className="contact-right">
-            <img src="images/text bubble float.webp" alt="" />
+            <img src="images/Text Bubble Float.webp" alt="" />
           </div>
         </div>
       </section>
