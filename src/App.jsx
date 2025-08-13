@@ -3,10 +3,8 @@ import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Resume from './components/Resume.jsx'
 import Contact from './components/Contact.jsx'
-import useSmoothScroll from './hooks/useSmoothScroll.js'
 
 export default function App() {
-  useSmoothScroll() // optional nicety
   return (
     <>
       <Navbar />

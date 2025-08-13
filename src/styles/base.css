@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin-right: 100px;
+  margin-left: 10px;
+  background: linear-gradient(rgb(42, 42, 171), rgb(77, 97, 160));
+  font-family: 'Roboto', sans-serif;
+  padding: 2em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  padding-top: 25px;
+  color: white;
+  /* Adjust the spacing between the header and iframe */
+  text-align: center;
+  font-size: 60px;
+
+}
+
+h2 {
+  color: white;
+  font-size: xx-large;
+  text-align: left;
+  padding-top: 25px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.85);
+  width: 50%;
+  font-size: large;
+}
+
+a {
+  color: white;
+}

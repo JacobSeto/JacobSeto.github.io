@@ -1,0 +1,60 @@
+.about {
+  padding-top: 100px;
+  /* Adjust this value based on your header height */
+  margin-top: -100px;
+}
+
+.about h1 {
+  color: white;
+  font-size: 120px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.about-text {
+  width: 100%;
+  /* This controls the width of the text content */
+}
+
+.about-image {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  /* Slightly rounded edges */
+  margin-left: 100px;
+  text-align: center;
+}
+
+.about p {
+  padding-bottom: 50px;
+  padding-left: 100px;
+  width: 85%;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 25px;
+}
+
+.socialmedia a {
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 48px;
+  /* Adjust size as needed */
+  height: 48px;
+  /* Adjust size as needed */
+}
