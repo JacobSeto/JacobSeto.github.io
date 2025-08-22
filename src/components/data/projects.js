@@ -1,8 +1,55 @@
 export const projects = [
-  // Current
+  {
+    id: 'emprise',
+    label: 'August 2025',
+    title: 'RCareWorld',
+    border: 'green',
+    bullets: [
+      'Project Type: Group',
+      'Role: Unity Developer',
+      'Software/Tools: Unity, GitHub',
+      'Platform: PC',
+    ],
+    description:
+      'An interactive simulator that trains caregiving robots through realistic training data, specialized to each patient and home environment',
+    image: 'Emprise.webp',
+    link: 'https://emprise.cs.cornell.edu/rcareworld/',
+  },
+  {
+    id: 'trigger',
+    label: 'May 2025',
+    title: 'Trigger Happy',
+    border: 'green',
+    bullets: [
+      'Project Type: Group',
+      'Role: Project Lead',
+      'Software/Tools: CUGL, Android Studio, Visual Studios',
+      'Platform: Mobile',
+    ],
+    description:
+      "A fast-paced multiplayer showdown set in a 1920's speakeasy, where you play as a high-roller trying to outsmart your opponents by playing your cards right and being the last one standing!",
+    image: 'Trigger Happy.webp',
+    link: 'https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/triggerhappy/',
+  },
+  {
+    id: 'grub',
+    label: 'May 2025',
+    title: 'Grub Bug',
+    border: 'green',
+    bullets: [
+      'Project Type: Group',
+      'Role: Lead Programmer',
+      'Software/Tools: Unity, GitHub',
+      'Platform: PC',
+    ],
+    description:
+      'Isometric Strategy game where you drive a food trick in a bustling bug metropolis, cooking on the road and delivering food while dodging obstacles and cops!',
+    image: 'Grub Bug.webp',
+    link: 'https://dgacornell.itch.io/grubbug',
+  },
   {
     id: 'serve',
-    label: 'Current',
+    label: 'May 2025',
     title: 'SERVE',
     border: 'blue',
     bullets: [
@@ -12,7 +59,7 @@ export const projects = [
       'Platform: Android',
     ],
     description:
-      'Developing a VR multiplayer lobby in Unity for research participants to collaborate in minigames and environments used for data collection.',
+      'VR multiplayer lobby in Unity for research participants to collaborate in minigames and environments used for data collection.',
     image: null,
     link: null,
   },
@@ -20,7 +67,7 @@ export const projects = [
   // Aug 2024 — Completely Hammered
   {
     id: 'hammer',
-    label: 'August, 2024',
+    label: 'August 2024',
     title: 'Completely Hammered',
     border: 'green',
     bullets: [
@@ -38,7 +85,7 @@ export const projects = [
   // May 2024 — Rabbeat
   {
     id: 'rabbeat',
-    label: 'May, 2024',
+    label: 'May 2024',
     title: 'Rabbeat',
     border: 'green',
     bullets: [
@@ -56,7 +103,7 @@ export const projects = [
   // May 2024 — Tilly's Critter Command
   {
     id: 'tilly',
-    label: 'May, 2024',
+    label: 'May 2024',
     title: "Tilly's Critter Command",
     border: 'green',
     bullets: [
@@ -74,7 +121,7 @@ export const projects = [
   // May 2024 — Polylect (Research)
   {
     id: 'polylect',
-    label: 'May, 2024',
+    label: 'May 2024',
     title: 'Polylect',
     border: 'blue',
     bullets: [
@@ -92,7 +139,7 @@ export const projects = [
   // Dec 2023 — Light Up the Stage
   {
     id: 'light',
-    label: 'December, 2023',
+    label: 'December 2023',
     title: 'Light Up the Stage',
     border: 'white', // personal
     bullets: [
@@ -110,7 +157,7 @@ export const projects = [
   // Dec 2023 — Rainbow Card Rumble
   {
     id: 'rainbow',
-    label: 'December, 2023',
+    label: 'December 2023',
     title: 'Rainbow Card Rumble',
     border: 'green',
     bullets: [
@@ -128,7 +175,7 @@ export const projects = [
   // Aug 2023 — Fury of The Lost Knight
   {
     id: 'fury',
-    label: 'August, 2023',
+    label: 'August 2023',
     title: 'Fury of The Lost Knight',
     border: 'green',
     bullets: [
@@ -146,7 +193,7 @@ export const projects = [
   // May 2023 — Flock Arena
   {
     id: 'flock-arena',
-    label: 'May, 2023',
+    label: 'May 2023',
     title: 'Flock Arena',
     border: 'white',
     bullets: [

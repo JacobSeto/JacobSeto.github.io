@@ -35,26 +35,14 @@ export default function About() {
           </p>
           {/* General Experience */}
           <p>
-            Throughout my years of game development and research at university, I’ve contributed to a wide range of
-            amazing projects, gaining invaluable experience in the process. I've taken on many different roles—project
-            lead, UI/UX, network designer—depending on the project's needs. In collaborative settings, I tend to
-            gravitate toward leadership roles, but will always prioritize being a team player. I am attentive to the
-            needs and concerns of my team members and am happy to step in wherever I can—whether that means leading with
-            high energy and enthusiasm, or letting others take the initiative and supporting them in realizing their
-            goals.
-          </p>
-          {/* Personal Interests */}
-          <p>
-            In my downtime, I work on my own game projects, all titled with the prefix "Flock"—a nod to the name of one
-            of my earliest video games I made in high school. I look up to games like <i>Slay the Spire</i> and <i>Risk
-              of Rain 2</i> for their ingenuity in their respective genres, and I aspire to create a game of similar
-            caliber. I also love playing board games and iterating on their designs, adding my own custom content and
-            rules to explore new mechanics. Recently, I got back into <i>Magic: The Gathering</i>, and play weekly at a
-            local card shop. My first video game, <a href="#castaways">Castaways</a>, was a Survival card game I made
+            My first video game, <a href="#castaways">Castaways</a>, was a Survival card game I made
             when I was just 14, which ignited my passion for game design.
+            Throughout my years of game development and research at university, I’ve contributed to a wide range of
+            amazing projects, gaining invaluable experience in the process. In my downtime, I work on my own game projects, all titled with the prefix "Flock"—a nod to the name of one
+            of my earliest video games I made in high school. I also love playing board games and iterating on their designs, adding my own custom content and rules to explore new mechanics. My dream project is to create a deckbuilder roguelike, similar to <i>Slay the Spire</i>, that focuses on realtime combat and discovering unique card combos to fight mages that use the same cards against you.
           </p>
         </div>
-        <div className ="about-right">
+        <div className="about-right">
           <ArticleCard />
           <div className="about-carousel">
             <Carousel />

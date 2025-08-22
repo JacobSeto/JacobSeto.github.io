@@ -25,13 +25,12 @@
 }
 
 .socialmedia img {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   display: block;
 }
 
 .about-image {
-  width: 20%;
   max-width: 260px;
   height: auto;
   display: block;
@@ -94,13 +93,12 @@
   max-width: 280px;
 }
 .article-right img {
-  width: 100%;
+  max-width: 800px;
   height: auto;
   border-radius: 12px;
 }
 
 .about-carousel {
-  width: 100%;
   max-width: 800px;
   aspect-ratio: 16 / 9;
   border-radius: 2px;
@@ -120,4 +118,44 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;     /* vertical stack */
+    align-items: stretch;       /* full-width children */
+    gap: 1.25rem;
+  }
+
+  .about-text {
+    order: 1;                   /* text first */
+  }
+
+  .about-right {
+    order: 2;                   /* moves below the text */
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Tighter typography/padding on phones */
+  .about p {
+    padding-left: 0;
+  }
+
+  /* Card/media tweaks so they fit nicely on narrow screens */
+  .about-right .article-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .article-right {
+    max-width: 100%;
+  }
+  .article-left a {
+    font-size: 32px;            /* was 50px; shrink for mobile */
+  }
+  .about-carousel {
+    max-width: 100%;
+    width: 100%;
+  }
 }

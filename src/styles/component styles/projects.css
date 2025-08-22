@@ -6,24 +6,6 @@
 .checkpoint {
   max-width: 34em;
   position: relative;
-  margin-bottom: -7.5em;
-}
-
-.checkpoint img {
-  max-width: 80%;
-  aspect-ratio: 1 / 1;
-  border-radius: 1em;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
-  box-sizing: border-box;
-}
-
-.checkpoint img:hover {
-  filter: brightness(1.1);
-  opacity: .9;
-  border: 2px solid white;
-  transition: all 0.3s ease;
 }
 
 .checkpoint ul {
@@ -56,14 +38,6 @@
 
 .blue-border div {
   border: 3px solid lightblue;
-}
-
-.checkpoint div onmouseenter {
-  background-color: white;
-}
-
-.checkpoint div onmouseout {
-  background: none;
 }
 
 .checkpoint:nth-child(odd) {
@@ -139,4 +113,61 @@
   left: 105%;
   transform: translateY(-50%);
   text-align: left;
+}
+
+
+.checkpoint.has-side-image .checkpoint-image {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  width: 300px;
+  transform: translateY(-10%);
+  height: auto;
+  object-fit: fill;
+  border-radius: 1em;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Odd = right side label -> put image on the right too */
+.checkpoint.has-side-image:nth-child(odd) .checkpoint-image {
+  right: 100%;
+  margin-right: 50%; /* small gap from the card edge */
+}
+
+/* Even = left side label -> put image on the left too */
+.checkpoint.has-side-image:nth-child(even) .checkpoint-image {
+  left: 100%;
+  margin-left: 50%;
+}
+
+@media (max-width: 1100px) {
+  .checkpoint label {
+    display: none !important;
+  }
+  /* Hide the side images */
+  .checkpoint.has-side-image .checkpoint-image {
+    display: none !important;
+  }
+
+  /* Remove the horizontal connector bars */
+  .checkpoint:nth-child(odd)::before,
+  .checkpoint:nth-child(even)::before {
+    content: none !important;
+  }
+
+  /* Remove the dot on each card */
+  .checkpoint:nth-child(odd) div::before,
+  .checkpoint:nth-child(even) div::before {
+    content: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove the left/right borders and center the cards */
+  .checkpoint:nth-child(odd),
+  .checkpoint:nth-child(even) {
+    border: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
 }

@@ -13,9 +13,6 @@ export default function Contact() {
           <textarea className="contact-inputs" name="message" placeholder="Message..." required />
           <button type="submit">Submit <img src="/images/arrow_icon.png" alt="" /></button>
         </form>
-        <div className="contact-right">
-          <img src="/images/Text Bubble Float.webp" alt="" />
-        </div>
       </div>
     </section>
   )
