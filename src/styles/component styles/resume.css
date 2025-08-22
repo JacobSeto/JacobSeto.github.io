@@ -7,19 +7,11 @@
   height: 100%;
 }
 
-.resume h1 {
-  margin-top: 25px;
-}
-
-.resume a {
-  margin-top: 10px;
-  font-size: 25px
-}
-
 .resume iframe {
   margin-top: 15px;
   width: 800px;
-  height: 1160px;
+  height: 1260px;
   border: none;
   margin-bottom: -100px;
+  overflow: hidden;
 }

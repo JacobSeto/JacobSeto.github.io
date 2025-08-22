@@ -1,9 +1,11 @@
-import ArticleCard from './ArticleCard'
+import Carousel from "./Carousel.jsx";
+import ArticleCard from "./ArticleCard.jsx";
 
 export default function About() {
   return (
     <section id="about" className="about">
       <h1>Jacob Seto</h1>
+      <img src="/images/Me.webp" alt="Jacob Seto" className="about-image" />
       <div className="socialmedia">
         <a href="https://www.linkedin.com/in/jacob-j-seto" target="_blank" rel="noreferrer">
           <img src="/images/linkedin.png" alt="linkedin" />
@@ -12,9 +14,7 @@ export default function About() {
           <img src="/images/github.png" alt="github" />
         </a>
       </div>
-
       <div className="about-content">
-        <img src="/images/Me.webp" alt="Jacob Seto" className="about-image" />
         <div className="about-text">
           {/* Introduction */}
           <p>Hi, thanks for checking out my website!</p>
@@ -54,8 +54,14 @@ export default function About() {
             when I was just 14, which ignited my passion for game design.
           </p>
         </div>
+        <div className ="about-right">
+          <ArticleCard />
+          <div className="about-carousel">
+            <Carousel />
+          </div>
+        </div>
       </div>
-      <ArticleCard />
+
     </section>
   )
 }

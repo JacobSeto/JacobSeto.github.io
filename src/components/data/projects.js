@@ -4,8 +4,9 @@ export const projects = [
     id: 'serve',
     label: 'Current',
     title: 'SERVE',
-    border: 'blue', // research
+    border: 'blue',
     bullets: [
+      'Project Type: Research',
       'Role: VR & Network Developer',
       'Software/Tools: Unity, Blender, Photon Engine',
       'Platform: Android',
@@ -21,8 +22,9 @@ export const projects = [
     id: 'hammer',
     label: 'August, 2024',
     title: 'Completely Hammered',
-    border: 'green', // group project
+    border: 'green',
     bullets: [
+      'Project Type: Group',
       'Role: Project Lead',
       'Software/Tools: Unity, GitHub',
       'Platform: PC',
@@ -40,6 +42,7 @@ export const projects = [
     title: 'Rabbeat',
     border: 'green',
     bullets: [
+      'Project Type: Group',
       'Role: Project Lead',
       'Software/Tools: IntelliJ, Tiled, GitHub',
       'Platform: PC',
@@ -57,6 +60,7 @@ export const projects = [
     title: "Tilly's Critter Command",
     border: 'green',
     bullets: [
+      'Project Type: Group',
       'Role: Programmer',
       'Software/Tools: Unity, GitHub, Unity Engine AI, Slack',
       'Platform: PC',
@@ -74,6 +78,7 @@ export const projects = [
     title: 'Polylect',
     border: 'blue',
     bullets: [
+      'Project Type: Research',
       'Role: Unity Developer',
       'Software/Tools: Unity, GitHub, Netcode for GameObjects',
       'Platform: PC',
@@ -91,6 +96,7 @@ export const projects = [
     title: 'Light Up the Stage',
     border: 'white', // personal
     bullets: [
+      'Project Type: Personal',
       'Role: Solo',
       'Software/Tools: Unity, GitHub, Blender',
       'Platform: PC',
@@ -108,7 +114,8 @@ export const projects = [
     title: 'Rainbow Card Rumble',
     border: 'green',
     bullets: [
-      'Role: Group Member',
+      'Project Type: Group',
+      'Role: Team Member',
       'Software/Tools: OCaml',
       'Platform: PC',
     ],
@@ -125,6 +132,7 @@ export const projects = [
     title: 'Fury of The Lost Knight',
     border: 'green',
     bullets: [
+      'Project Type: Group',
       'Role: Project Lead & Programmer',
       'Software/Tools: Unity, GitHub',
       'Platform: PC',
@@ -142,6 +150,7 @@ export const projects = [
     title: 'Flock Arena',
     border: 'white',
     bullets: [
+      'Project Type: Personal',
       'Role: Solo',
       'Software/Tools: Unity, GitHub, Photon Engine',
       'Platform: PC',
@@ -159,6 +168,7 @@ export const projects = [
     title: 'Planetoids',
     border: 'green',
     bullets: [
+      'Project Type: Group',
       'Role: Project Member',
       'Software/Tools: Python',
       'Platform: PC',
@@ -176,6 +186,7 @@ export const projects = [
     title: 'Carbon Footprint Calculator',
     border: 'green',
     bullets: [
+      'Project Type: Group',
       'Role: BigRed//Hacks Participant',
       'Software/Tools: Unity, C#',
       'Platform: PC',
@@ -193,6 +204,7 @@ export const projects = [
     title: 'Castaways',
     border: 'white',
     bullets: [
+      'Project Type: Personal',
       'Role: Solo',
       'Software/Tools: Unity, C#',
       'Platform: PC',

@@ -1,6 +1,6 @@
 .about {
   padding-top: 100px;
-  /* Adjust this value based on your header height */
+  padding: 32px 10% 0 10%;
   margin-top: -100px;
 }
 
@@ -10,51 +10,114 @@
   text-align: center;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.about-text {
-  width: 100%;
-  /* This controls the width of the text content */
-}
-
-.about-image {
-  width: 30%;
-  height: auto;
-  border-radius: 10px;
-  /* Slightly rounded edges */
-  margin-left: 100px;
-  text-align: center;
-}
-
-.about p {
-  padding-bottom: 50px;
-  padding-left: 100px;
-  width: 85%;
-}
-
 .socialmedia {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   width: 100%;
-  bottom: 0;
   margin-bottom: 25px;
 }
 
 .socialmedia a {
-  margin: 0 10px;
+  margin: 10px;
+  max-width: 64px;
 }
 
 .socialmedia img {
   width: 48px;
-  /* Adjust size as needed */
   height: 48px;
-  /* Adjust size as needed */
+  display: block;
+}
+
+.about-image {
+  width: 20%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  border: 2px solid white;
+}
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.about-text {
+  flex: 1 1 0;
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.about p {
+  padding-left: 10%;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 50%;
+}
+
+.about-right .article-card {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.article-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.article-left a { font-size: 50px; }
+
+.article-right {
+  flex: 0 0 auto;
+  max-width: 280px;
+}
+.article-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-carousel {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border-radius: 2px;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.about-carousel .carousel,
+.about-carousel .carousel-inner,
+.about-carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.about-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
