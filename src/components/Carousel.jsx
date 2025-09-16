@@ -20,6 +20,16 @@ export default function ControlledCarousel() {
 
       <Carousel.Item>
         <img
+          src="/images/slideshow/DGA x Roblox.webp"
+          alt="DGA x Roblox"
+        />
+        <Carousel.Caption>
+          <h3>DGA x Roblox Collab</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
           src="/images/slideshow/DGA Studios.webp"
           alt="DGA Studios"
         />

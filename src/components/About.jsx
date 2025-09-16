@@ -20,7 +20,8 @@ export default function About() {
           <p>Hi, thanks for checking out my website!</p>
           <p>
             I'm an undergraduate student at Cornell University, pursuing a major in Computer Science with a minor in
-            Game Design and Music. I serve as president of the{" "}
+            Game Design and Music. I'm passionate about game development and project management, with a strong drive to collaborate and lead
+             teams in both creative and techinical works. I serve as president of the{" "}
             <a href="https://dga-official-website.vercel.app/" target="_blank" rel="noreferrer">
               Development in Games Association (DGA)
             </a>
@@ -30,9 +31,8 @@ export default function About() {
             <a href="https://www.cuorchestra.org/" target="_blank" rel="noreferrer">
               Cornell Symphony Orchestra
             </a>
-            . I'm passionate about game development and project management, with a strong drive to collaborate and lead
-             teams in both creative and techinical works. I aspire to work in the game industry and eventually own my own indie company. Follow my journey and send
-            me a message, I'm always happy to meet new people!
+            . I aspire to work in the games industry and eventually own my own
+              indie company. Follow my journey and send me a message, I'm always happy to meet new people!
           </p>
           {/* General Experience */}
           <p>
