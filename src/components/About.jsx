@@ -30,7 +30,8 @@ export default function About() {
             <a href="https://www.cuorchestra.org/" target="_blank" rel="noreferrer">
               Cornell Symphony Orchestra
             </a>
-            . I aspire to work in the game industry and eventually own my own indie company. Follow my journey and send
+            . I'm passionate about game development and project management, with a strong drive to collaborate and lead
+             teams in both creative and techinical works. I aspire to work in the game industry and eventually own my own indie company. Follow my journey and send
             me a message, I'm always happy to meet new people!
           </p>
           {/* General Experience */}
