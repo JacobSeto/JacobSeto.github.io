@@ -24,7 +24,6 @@
 
 .checkpoint div {
   border-radius: 1em;
-  padding: 1.5em;
   background: rgba(255, 255, 255, 0.03);
 }
 
@@ -117,10 +116,8 @@
 
 
 .checkpoint.has-side-image .checkpoint-image {
-  position: absolute;
   aspect-ratio: 1 / 1;
-  width: 300px;
-  transform: translateY(-10%);
+  max-width: 256px;
   height: auto;
   object-fit: fill;
   border-radius: 1em;
@@ -128,28 +125,10 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-/* Odd = right side label -> put image on the right too */
-.checkpoint.has-side-image:nth-child(odd) .checkpoint-image {
-  right: 100%;
-  margin-right: 50%; /* small gap from the card edge */
-}
-
-/* Even = left side label -> put image on the left too */
-.checkpoint.has-side-image:nth-child(even) .checkpoint-image {
-  left: 100%;
-  margin-left: 50%;
-}
-
 @media (max-width: 1100px) {
   .checkpoint label {
     display: none !important;
   }
-  /* Hide the side images */
-  .checkpoint.has-side-image .checkpoint-image {
-    display: none !important;
-  }
-
   /* Remove the horizontal connector bars */
   .checkpoint:nth-child(odd)::before,
   .checkpoint:nth-child(even)::before {

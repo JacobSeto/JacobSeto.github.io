@@ -1,4 +1,3 @@
-// ProjectCard.jsx
 export default function ProjectCard({ id, label, title, border, bullets, description, image, link }) {
   const borderClass = `${border}-border`;
   const hasImageClass = image ? 'has-side-image' : '';

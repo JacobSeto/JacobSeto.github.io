@@ -1,9 +1,57 @@
 export const projects = [
   {
+    id: 'duke',
+    label: 'September 2025',
+    title: 'Duke VS. The Gang',
+    border: 'green',
+    bullets: [
+      'Project Type: Group',
+      'Role: Unity Developer',
+      'Software/Tools: Unity, GitHub',
+      'Platform: PC',
+    ],
+    description:
+      'You are a bartender that is at rivalry with an evil corporation! Use your drink-mixing skills to create powerful cocktails to defeat the hired gangsters and save your hometown!',
+    image: 'Duke.webp',
+    link: 'https://dgacornell.itch.io/duke-vs-the-gang',
+  },
+  {
+    id: 'design',
+    label: 'September 2025',
+    title: 'Unreleased Textiles Design Game',
+    border: 'blue',
+    bullets: [
+      'Project Type: Research',
+      'Role: Unity Developer',
+      'Software/Tools: Unity, GitHub, Meta Quest Pro',
+      'Platform: VR',
+    ],
+    description:
+      'A VR game that will be used to teach students about textile design through interactive lessons and challenges',
+    image: 'Design.webp',
+    link: 'https://fit.human.cornell.edu/',
+  },
+  {
+    id: 'scute',
+    label: 'August 2025',
+    title: 'Scute Shoot',
+    border: 'green',
+    bullets: [
+      'Project Type: Group',
+      'Role: Project Manager',
+      'Software/Tools: Unity, GitHub',
+      'Platform: PC',
+    ],
+    description:
+      'Play as an armadillo to help your animal friends escape the zoo! Use your shell to knockout the zookeepers and bounce around the exhibits! ',
+    image: 'Scute.webp',
+    link: 'https://dgacornell.itch.io/scute-shoot',
+  },
+  {
     id: 'emprise',
     label: 'August 2025',
     title: 'RCareWorld',
-    border: 'green',
+    border: 'blue',
     bullets: [
       'Project Type: Group',
       'Role: Unity Developer',
