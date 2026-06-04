@@ -19,19 +19,14 @@ export default function About() {
           {/* Introduction */}
           <p>Hi, thanks for checking out my website!</p>
           <p>
-            I'm an undergraduate student at Cornell University, pursuing a major in Computer Science with a minor in
-            Game Design and Music. I'm passionate about game development and project management, with a strong drive to collaborate and lead
-             teams in both creative and techinical works. I serve as president of the{" "}
+            I'm a recent student at Cornell University, majored in Computer Science with a minor in
+            Game Design and Music. I'm extremely passionate about game development and project management, with a strong drive to collaborate and lead
+             teams in both creative and techinical works. I served as president of the{" "}
             <a href="https://dga-official-website.vercel.app/" target="_blank" rel="noreferrer">
               Development in Games Association (DGA)
             </a>
             , a club that fosters passion for game development through specialized workshops, industry talks with
-            alumni, and making games with members. I've been playing the cello for over a decade, and continue to play
-            for the{" "}
-            <a href="https://www.cuorchestra.org/" target="_blank" rel="noreferrer">
-              Cornell Symphony Orchestra
-            </a>
-            . I aspire to work in the games industry and eventually own my own
+            alumni, and making games with members. I have played the cello for over a decade, and music has been a large aspect of my life. I aspire to work in the games industry and eventually own my own
               indie company. Follow my journey and send me a message, I'm always happy to meet new people!
           </p>
           {/* General Experience */}

@@ -13,7 +13,7 @@ export const projects = [
     description:
       'You are a bartender that is at rivalry with an evil corporation! Use your drink-mixing skills to create powerful cocktails to defeat the hired gangsters and save your hometown!',
     image: 'Duke.webp',
-    link: 'https://dgacornell.itch.io/duke-vs-the-gang',
+    link: 'https://store.steampowered.com/app/4662580/Duke_vs_The_Gang/',
   },
   {
     id: 'design',
